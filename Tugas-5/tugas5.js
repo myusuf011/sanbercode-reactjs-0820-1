@@ -62,11 +62,23 @@ console.log(arraySoal5[0]);
 console.log();
 console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>SOAL 6<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 //SOAL 6
-var dataFilm = [
-    {nama: 'Batman v Superman: Dawn of Justice', durasi: '183 menit', genre: 'Fantasy', tahun: 2016 },
-    {nama: 'Annabelle: Creation', durasi: '110 menit', genre: 'Horror', tahun: 2017 },
-    {nama: 'Interstellar', durasi: '‎169 menit', genre: 'Sci-Fi', tahun: 2014 }
-]
+var dataFilm = [];
+
+function inputFilm(sNama, sDurasi, sGenre, sTahun){
+    var data = {
+        nama: sNama, 
+        durasi: sDurasi,
+        genre: sGenre, 
+        tahun: sTahun 
+    };
+
+    dataFilm.push(data);
+}
+
+inputFilm('Batman v Superman: Dawn of Justice', '183 menit', 'Fantasy', 2016);
+inputFilm('Annabelle: Creation', '110 menit', 'Horror', 2017);
+inputFilm('Interstellar', '169 menit', 'Sci-Fi', 2014);
+
 console.log(dataFilm);
 
 console.log();
